@@ -6,9 +6,8 @@ def Selection_sort(l):
         for j in range(i+1,len(l)):
             
             if l[j] < l[index]:
-                index = j
-        if index!=i:
-            l[i],l[index] = l[index],l[i]
+                # equivalent of using a swap function   
+                l[j],l[index] = l[index],l[j] 
 
     return l
 
